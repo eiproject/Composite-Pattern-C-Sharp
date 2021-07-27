@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CompositePattern.Models {
   class DuckCall : IQuack {
+    internal DuckCall() { }
     void IQuack.Quack() {
       Console.WriteLine("kwak");
     }

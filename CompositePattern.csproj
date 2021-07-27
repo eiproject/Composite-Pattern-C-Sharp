@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\GooseAdapter.cs" />
     <Compile Include="Models\DuckCall.cs" />
+    <Compile Include="Models\Goose.cs" />
     <Compile Include="Models\RedheadDuck.cs" />
     <Compile Include="Models\MallardDuck.cs" />
     <Compile Include="Models\RubberDuck.cs" />

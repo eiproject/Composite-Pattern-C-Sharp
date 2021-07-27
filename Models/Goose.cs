@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CompositePattern.Models {
-  class RedheadDuck : IQuack {
-    internal RedheadDuck() { }|
-    void IQuack.Quack() {
-      Console.WriteLine("Quack");
+  class Goose {
+    internal Goose() { }
+    internal void honk() {
+      Console.WriteLine("Honk");
     }
   }
 }
