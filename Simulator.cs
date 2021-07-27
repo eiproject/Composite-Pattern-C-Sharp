@@ -1,6 +1,6 @@
-﻿using CompositePattern.Models; 
+﻿using CompoundPattern.Models; 
 
-namespace CompositePattern {
+namespace CompoundPattern {
   class Simulator {
     private IFactory _factory;
     internal Simulator() {

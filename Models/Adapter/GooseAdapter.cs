@@ -1,4 +1,4 @@
-﻿namespace CompositePattern.Models {
+﻿namespace CompoundPattern.Models {
   class GooseAdapter : IQuack {
     IQuackObserver _observer;
     IQuackObserver IQuack.Observer { get { return _observer; } }

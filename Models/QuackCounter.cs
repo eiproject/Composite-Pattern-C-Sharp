@@ -1,6 +1,6 @@
 ﻿using System; 
 
-namespace CompositePattern.Models {
+namespace CompoundPattern.Models {
   class QuackCounter : IQuack {
     private IQuack _animal;
     IQuackObserver _observer;

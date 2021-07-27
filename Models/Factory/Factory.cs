@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompositePattern.Models {
+namespace CompoundPattern.Models {
   class Factory : IFactory {
     IQuack IFactory.CreateDuckCall() {
       return new DuckCall();

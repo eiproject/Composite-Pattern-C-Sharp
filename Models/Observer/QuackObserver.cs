@@ -1,6 +1,6 @@
 ﻿using System.Collections; 
 
-namespace CompositePattern.Models {
+namespace CompoundPattern.Models {
   class QuackObserver : IQuackObserver {
     ArrayList _allObservers;
     IQuackObserver _animal;
