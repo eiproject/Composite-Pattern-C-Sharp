@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace CompositePattern {
   class Simulator {
-    internal Simulator() { }
+    internal Simulator() {
+    }
     internal void Simulate() {
-      IQuack mallardDuck = new MallardDuck();
-      IQuack redheadDuck = new RedheadDuck();
-      IQuack duckCall = new DuckCall();
-      IQuack rubberDuck = new RubberDuck();
+      IQuack mallardDuck = new QuackCounter(new MallardDuck());
+      IQuack redheadDuck = new QuackCounter(new RedheadDuck());
+      IQuack duckCall = new QuackCounter(new DuckCall());
+      IQuack rubberDuck = new QuackCounter(new RubberDuck());
       IQuack goose = new GooseAdapter(new Goose());
 
 
@@ -22,6 +23,8 @@ namespace CompositePattern {
       Simulate(duckCall);
       Simulate(rubberDuck);
       Simulate(goose);
+
+      QuackCounter.CheckCounter();
     }
     void Simulate(IQuack duck) {
       duck.Quack();
