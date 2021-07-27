@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CompositePattern.Models {
   class RedheadDuck : IQuack {
-    internal RedheadDuck() { }|
+    internal RedheadDuck() { }
     void IQuack.Quack() {
       Console.WriteLine("Quack");
     }
