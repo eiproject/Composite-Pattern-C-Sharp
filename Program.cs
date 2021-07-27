@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace CompositePattern {
   class Program {
     static void Main(string[] args) {
-      Console.WriteLine("Bismillah");
+      Simulator duckSimulator = new Simulator();
+      duckSimulator.Simulate();
       Console.ReadKey();
     }
   }
