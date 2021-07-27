@@ -43,8 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\DuckCall.cs" />
+    <Compile Include="Models\RedheadDuck.cs" />
+    <Compile Include="Models\MallardDuck.cs" />
+    <Compile Include="Models\RubberDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\IQuack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
