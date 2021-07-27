@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace CompositePattern {
   class Simulator {
+    private IFactory _factory;
     internal Simulator() {
+      _factory = new CounterFactory();
     }
     internal void Simulate() {
-      IQuack mallardDuck = new QuackCounter(new MallardDuck());
-      IQuack redheadDuck = new QuackCounter(new RedheadDuck());
-      IQuack duckCall = new QuackCounter(new DuckCall());
-      IQuack rubberDuck = new QuackCounter(new RubberDuck());
+      IQuack mallardDuck = _factory.CreateMallardDuck();
+      IQuack redheadDuck = _factory.CreateRedheadDuck();
+      IQuack duckCall = _factory.CreateDuckCall();
+      IQuack rubberDuck = _factory.CreateRubberDuck();
       IQuack goose = new GooseAdapter(new Goose());
 
 
