@@ -1,14 +1,19 @@
-﻿namespace CompositePattern.Models {
-  class GooseAdapter : IQuack {
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CompositePattern.Models {
+  class DuckCall : IQuack {
     IQuackObserver _observer;
     IQuackObserver IQuack.Observer { get { return _observer; } }
-    private Goose _goose;
-    internal GooseAdapter(Goose goose) {
-      _goose = goose;
+    internal DuckCall() {
       _observer = new QuackObserver(this);
     }
+
     void IQuack.Quack() {
-      _goose.honk();
+      Console.WriteLine("kwak");
       _observer.NotifyObservers();
     }
 

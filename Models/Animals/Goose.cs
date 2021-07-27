@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace CompositePattern.Models {
   class Goose {
-    internal Goose() { }
+    internal Goose() {
+    }
     internal void honk() {
       Console.WriteLine("Honk");
     }
+
   }
 }

@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CompositePattern.Models {
-  class RedheadDuck : IQuack {
-    internal RedheadDuck() { }
-    void IQuack.Quack() {
-      Console.WriteLine("Quack");
+  class Observer : IObserver {
+    void IObserver.Update(IQuackObserver animal) {
+      Console.WriteLine($"Notification: { animal.GetType().Name } just quacked.");
     }
   }
 }

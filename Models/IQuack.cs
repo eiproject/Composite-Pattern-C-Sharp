@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CompositePattern.Models {
-  interface IQuack {
+﻿namespace CompositePattern.Models {
+  interface IQuack : IQuackObserver {
     void Quack();
+    IQuackObserver Observer { get; }
   }
 }

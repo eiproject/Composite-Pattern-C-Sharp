@@ -1,14 +1,14 @@
-﻿namespace CompositePattern.Models {
-  class GooseAdapter : IQuack {
+﻿using System; 
+
+namespace CompositePattern.Models {
+  class RedheadDuck : IQuack {
     IQuackObserver _observer;
     IQuackObserver IQuack.Observer { get { return _observer; } }
-    private Goose _goose;
-    internal GooseAdapter(Goose goose) {
-      _goose = goose;
-      _observer = new QuackObserver(this);
+    internal RedheadDuck() { 
+      _observer = new QuackObserver(this); 
     }
     void IQuack.Quack() {
-      _goose.honk();
+      Console.WriteLine("Quack");
       _observer.NotifyObservers();
     }
 

@@ -5,10 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CompositePattern.Models {
-  class DuckCall : IQuack {
-    internal DuckCall() { }
-    void IQuack.Quack() {
-      Console.WriteLine("kwak");
-    }
+  interface IObserver {
+    void Update(IQuackObserver animal);
   }
 }

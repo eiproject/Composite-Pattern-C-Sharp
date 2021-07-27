@@ -1,9 +1,4 @@
-﻿using CompositePattern.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CompositePattern.Models; 
 
 namespace CompositePattern {
   class Simulator {
@@ -20,14 +15,13 @@ namespace CompositePattern {
 
       Flock flocks = new Flock();
       flocks.AddAnimal(mallardDuck);
-      flocks.AddAnimal(mallardDuck);
-      flocks.AddAnimal(mallardDuck);
-      flocks.AddAnimal(mallardDuck);
       flocks.AddAnimal(redheadDuck);
       flocks.AddAnimal(duckCall);
       flocks.AddAnimal(rubberDuck);
       flocks.AddAnimal(goose);
 
+      IObserver theObserver = new Observer();
+      flocks.RegisterObserver(theObserver);
       Simulate(flocks);
       QuackCounter.CheckCounter();
     }
