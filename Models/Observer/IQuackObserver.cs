@@ -1,6 +1,6 @@
 ﻿namespace CompoundPattern.Models {
   interface IQuackObserver {
-    void RegisterObserver(IObserver observer);
+    void RegisterObserver(ISubscriber observer);
     void NotifyObservers();
   }
 }

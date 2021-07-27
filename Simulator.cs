@@ -20,7 +20,7 @@ namespace CompoundPattern {
       flocks.AddAnimal(rubberDuck);
       flocks.AddAnimal(goose);
 
-      IObserver theObserver = new Observer();
+      ISubscriber theObserver = new Subscriber();
       flocks.RegisterObserver(theObserver);
       Simulate(flocks);
       QuackCounter.CheckCounter();

@@ -12,7 +12,7 @@ namespace CompoundPattern.Models {
       _observer.NotifyObservers();
     }
 
-    void IQuackObserver.RegisterObserver(IObserver observer) {
+    void IQuackObserver.RegisterObserver(ISubscriber observer) {
       _observer.RegisterObserver(observer);
     }
 

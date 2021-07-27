@@ -8,7 +8,7 @@ namespace CompoundPattern.Models {
   class Goose {
     internal Goose() {
     }
-    internal void honk() {
+    internal void Honk() {
       Console.WriteLine("Honk");
     }
 

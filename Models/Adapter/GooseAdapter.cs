@@ -8,11 +8,11 @@
       _observer = new QuackObserver(this);
     }
     void IQuack.Quack() {
-      _goose.honk();
+      _goose.Honk();
       _observer.NotifyObservers();
     }
 
-    void IQuackObserver.RegisterObserver(IObserver observer) {
+    void IQuackObserver.RegisterObserver(ISubscriber observer) {
       _observer.RegisterObserver(observer);
     }
 

@@ -21,7 +21,7 @@ namespace CompoundPattern.Models {
       Console.WriteLine($"Number of Quack : { _numberOfQuack }");
     }
 
-    void IQuackObserver.RegisterObserver(IObserver observer) {
+    void IQuackObserver.RegisterObserver(ISubscriber observer) {
       _observer.RegisterObserver(observer);
     }
 

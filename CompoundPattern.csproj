@@ -48,11 +48,11 @@
     <Compile Include="Models\Factory\CounterFactory.cs" />
     <Compile Include="Models\Factory\Factory.cs" />
     <Compile Include="Models\Factory\IFactory.cs" />
-    <Compile Include="Models\Observer\IObserver.cs" />
+    <Compile Include="Models\Observer\ISubscriber.cs" />
     <Compile Include="Models\Observer\IQuackObserver.cs" />
     <Compile Include="Models\Iterator\Flock.cs" />
     <Compile Include="Models\Animals\Goose.cs" />
-    <Compile Include="Models\Observer\Observer.cs" />
+    <Compile Include="Models\Observer\Subscriber.cs" />
     <Compile Include="Models\Observer\QuackObserver.cs" />
     <Compile Include="Models\QuackCounter.cs" />
     <Compile Include="Models\Animals\RedheadDuck.cs" />

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CompoundPattern.Models {
-  interface IObserver {
+  interface ISubscriber {
     void Update(IQuackObserver animal);
   }
 }

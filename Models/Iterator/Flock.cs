@@ -20,7 +20,7 @@ namespace CompoundPattern.Models {
         animal.Quack();
       }
     }
-    public void RegisterObserver(IObserver observer) {
+    public void RegisterObserver(ISubscriber observer) {
       foreach (IQuack animal in _flockOfAnimals) {
         animal.RegisterObserver(observer);
       }

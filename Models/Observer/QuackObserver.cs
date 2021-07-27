@@ -9,12 +9,12 @@ namespace CompoundPattern.Models {
       _animal = animal;
     }
 
-    void IQuackObserver.RegisterObserver(IObserver observer) {
+    void IQuackObserver.RegisterObserver(ISubscriber observer) {
       _allObservers.Add(observer);
     }
 
     void IQuackObserver.NotifyObservers() {
-      foreach (IObserver observer in _allObservers) {
+      foreach (ISubscriber observer in _allObservers) {
         observer.Update(_animal);
       }
     }
