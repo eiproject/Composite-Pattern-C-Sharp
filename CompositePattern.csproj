@@ -48,6 +48,7 @@
     <Compile Include="Models\Factory\CounterFactory.cs" />
     <Compile Include="Models\Factory\Factory.cs" />
     <Compile Include="Models\Factory\IFactory.cs" />
+    <Compile Include="Models\Iterator\Flock.cs" />
     <Compile Include="Models\Goose.cs" />
     <Compile Include="Models\QuackCounter.cs" />
     <Compile Include="Models\RedheadDuck.cs" />

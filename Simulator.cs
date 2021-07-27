@@ -18,14 +18,17 @@ namespace CompositePattern {
       IQuack rubberDuck = _factory.CreateRubberDuck();
       IQuack goose = new GooseAdapter(new Goose());
 
+      Flock flocks = new Flock();
+      flocks.AddAnimal(mallardDuck);
+      flocks.AddAnimal(mallardDuck);
+      flocks.AddAnimal(mallardDuck);
+      flocks.AddAnimal(mallardDuck);
+      flocks.AddAnimal(redheadDuck);
+      flocks.AddAnimal(duckCall);
+      flocks.AddAnimal(rubberDuck);
+      flocks.AddAnimal(goose);
 
-      Console.WriteLine("Duck Simulator");
-      Simulate(mallardDuck);
-      Simulate(redheadDuck);
-      Simulate(duckCall);
-      Simulate(rubberDuck);
-      Simulate(goose);
-
+      Simulate(flocks);
       QuackCounter.CheckCounter();
     }
     void Simulate(IQuack duck) {
